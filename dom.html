@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <h1 id="title">Hello, World!</h1>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        // Access the DOM elements
+        const title = document.getElementById('title');
+        const button = document.getElementById('changeTextButton');
+
+        // Add an event listener to the button
+        button.addEventListener('click', () => {
+            // Change the text content of the title element
+            title.textContent = 'Text Changed!';
+        });
+    </script>
+</body>
+</html>
